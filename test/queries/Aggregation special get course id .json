@@ -1,0 +1,474 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 88
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 89
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "max",
+                "courses_dept"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "max"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "max": {
+                        "COUNT": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "max": 50,
+            "courses_dept": "epse"
+        },
+        {
+            "max": 46,
+            "courses_dept": "etec"
+        },
+        {
+            "max": 43,
+            "courses_dept": "cnps"
+        },
+        {
+            "max": 30,
+            "courses_dept": "musc"
+        },
+        {
+            "max": 29,
+            "courses_dept": "edst"
+        },
+        {
+            "max": 23,
+            "courses_dept": "phar"
+        },
+        {
+            "max": 21,
+            "courses_dept": "audi"
+        },
+        {
+            "max": 21,
+            "courses_dept": "sowk"
+        },
+        {
+            "max": 21,
+            "courses_dept": "spph"
+        },
+        {
+            "max": 20,
+            "courses_dept": "edcp"
+        },
+        {
+            "max": 19,
+            "courses_dept": "nurs"
+        },
+        {
+            "max": 17,
+            "courses_dept": "educ"
+        },
+        {
+            "max": 16,
+            "courses_dept": "civl"
+        },
+        {
+            "max": 16,
+            "courses_dept": "econ"
+        },
+        {
+            "max": 14,
+            "courses_dept": "cell"
+        },
+        {
+            "max": 12,
+            "courses_dept": "mine"
+        },
+        {
+            "max": 11,
+            "courses_dept": "apsc"
+        },
+        {
+            "max": 11,
+            "courses_dept": "eece"
+        },
+        {
+            "max": 11,
+            "courses_dept": "phys"
+        },
+        {
+            "max": 10,
+            "courses_dept": "dhyg"
+        },
+        {
+            "max": 10,
+            "courses_dept": "eosc"
+        },
+        {
+            "max": 10,
+            "courses_dept": "frst"
+        },
+        {
+            "max": 10,
+            "courses_dept": "math"
+        },
+        {
+            "max": 10,
+            "courses_dept": "mech"
+        },
+        {
+            "max": 10,
+            "courses_dept": "medg"
+        },
+        {
+            "max": 9,
+            "courses_dept": "biol"
+        },
+        {
+            "max": 9,
+            "courses_dept": "chbe"
+        },
+        {
+            "max": 9,
+            "courses_dept": "kin"
+        },
+        {
+            "max": 9,
+            "courses_dept": "libr"
+        },
+        {
+            "max": 9,
+            "courses_dept": "lled"
+        },
+        {
+            "max": 9,
+            "courses_dept": "path"
+        },
+        {
+            "max": 9,
+            "courses_dept": "pcth"
+        },
+        {
+            "max": 9,
+            "courses_dept": "psyc"
+        },
+        {
+            "max": 9,
+            "courses_dept": "rhsc"
+        },
+        {
+            "max": 8,
+            "courses_dept": "micb"
+        },
+        {
+            "max": 7,
+            "courses_dept": "adhe"
+        },
+        {
+            "max": 7,
+            "courses_dept": "midw"
+        },
+        {
+            "max": 7,
+            "courses_dept": "phth"
+        },
+        {
+            "max": 7,
+            "courses_dept": "rsot"
+        },
+        {
+            "max": 6,
+            "courses_dept": "bioc"
+        },
+        {
+            "max": 6,
+            "courses_dept": "cpsc"
+        },
+        {
+            "max": 6,
+            "courses_dept": "medi"
+        },
+        {
+            "max": 6,
+            "courses_dept": "plan"
+        },
+        {
+            "max": 6,
+            "courses_dept": "stat"
+        },
+        {
+            "max": 5,
+            "courses_dept": "anth"
+        },
+        {
+            "max": 5,
+            "courses_dept": "arst"
+        },
+        {
+            "max": 5,
+            "courses_dept": "fipr"
+        },
+        {
+            "max": 5,
+            "courses_dept": "fnh"
+        },
+        {
+            "max": 4,
+            "courses_dept": "arth"
+        },
+        {
+            "max": 4,
+            "courses_dept": "caps"
+        },
+        {
+            "max": 4,
+            "courses_dept": "dent"
+        },
+        {
+            "max": 4,
+            "courses_dept": "ling"
+        },
+        {
+            "max": 4,
+            "courses_dept": "rmes"
+        },
+        {
+            "max": 4,
+            "courses_dept": "soci"
+        },
+        {
+            "max": 4,
+            "courses_dept": "visa"
+        },
+        {
+            "max": 4,
+            "courses_dept": "zool"
+        },
+        {
+            "max": 3,
+            "courses_dept": "bafi"
+        },
+        {
+            "max": 3,
+            "courses_dept": "ccst"
+        },
+        {
+            "max": 3,
+            "courses_dept": "chem"
+        },
+        {
+            "max": 3,
+            "courses_dept": "germ"
+        },
+        {
+            "max": 3,
+            "courses_dept": "gsat"
+        },
+        {
+            "max": 3,
+            "courses_dept": "lfs"
+        },
+        {
+            "max": 3,
+            "courses_dept": "mtrl"
+        },
+        {
+            "max": 3,
+            "courses_dept": "obst"
+        },
+        {
+            "max": 3,
+            "courses_dept": "thtr"
+        },
+        {
+            "max": 2,
+            "courses_dept": "apbi"
+        },
+        {
+            "max": 2,
+            "courses_dept": "biof"
+        },
+        {
+            "max": 2,
+            "courses_dept": "ceen"
+        },
+        {
+            "max": 2,
+            "courses_dept": "cics"
+        },
+        {
+            "max": 2,
+            "courses_dept": "comm"
+        },
+        {
+            "max": 2,
+            "courses_dept": "fopr"
+        },
+        {
+            "max": 2,
+            "courses_dept": "fre"
+        },
+        {
+            "max": 2,
+            "courses_dept": "grsj"
+        },
+        {
+            "max": 2,
+            "courses_dept": "hist"
+        },
+        {
+            "max": 2,
+            "courses_dept": "hunu"
+        },
+        {
+            "max": 2,
+            "courses_dept": "mrne"
+        },
+        {
+            "max": 2,
+            "courses_dept": "port"
+        },
+        {
+            "max": 2,
+            "courses_dept": "russ"
+        },
+        {
+            "max": 2,
+            "courses_dept": "surg"
+        },
+        {
+            "max": 1,
+            "courses_dept": "arch"
+        },
+        {
+            "max": 1,
+            "courses_dept": "astr"
+        },
+        {
+            "max": 1,
+            "courses_dept": "babs"
+        },
+        {
+            "max": 1,
+            "courses_dept": "bams"
+        },
+        {
+            "max": 1,
+            "courses_dept": "bmeg"
+        },
+        {
+            "max": 1,
+            "courses_dept": "busi"
+        },
+        {
+            "max": 1,
+            "courses_dept": "chil"
+        },
+        {
+            "max": 1,
+            "courses_dept": "clst"
+        },
+        {
+            "max": 1,
+            "courses_dept": "cogs"
+        },
+        {
+            "max": 1,
+            "courses_dept": "cons"
+        },
+        {
+            "max": 1,
+            "courses_dept": "eced"
+        },
+        {
+            "max": 1,
+            "courses_dept": "engl"
+        },
+        {
+            "max": 1,
+            "courses_dept": "envr"
+        },
+        {
+            "max": 1,
+            "courses_dept": "fish"
+        },
+        {
+            "max": 1,
+            "courses_dept": "food"
+        },
+        {
+            "max": 1,
+            "courses_dept": "fren"
+        },
+        {
+            "max": 1,
+            "courses_dept": "geob"
+        },
+        {
+            "max": 1,
+            "courses_dept": "geog"
+        },
+        {
+            "max": 1,
+            "courses_dept": "gpp"
+        },
+        {
+            "max": 1,
+            "courses_dept": "hgse"
+        },
+        {
+            "max": 1,
+            "courses_dept": "libe"
+        },
+        {
+            "max": 1,
+            "courses_dept": "name"
+        },
+        {
+            "max": 1,
+            "courses_dept": "nrsc"
+        },
+        {
+            "max": 1,
+            "courses_dept": "pers"
+        },
+        {
+            "max": 1,
+            "courses_dept": "phil"
+        },
+        {
+            "max": 1,
+            "courses_dept": "pols"
+        },
+        {
+            "max": 1,
+            "courses_dept": "spha"
+        },
+        {
+            "max": 1,
+            "courses_dept": "sts"
+        }
+    ]
+}

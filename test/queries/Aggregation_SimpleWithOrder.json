@@ -1,0 +1,474 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 88
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 89
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "max"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "max"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "max": {
+                        "MAX": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "etec",
+            "max": 88.98
+        },
+        {
+            "courses_dept": "micb",
+            "max": 88.98
+        },
+        {
+            "courses_dept": "audi",
+            "max": 88.96
+        },
+        {
+            "courses_dept": "cnps",
+            "max": 88.96
+        },
+        {
+            "courses_dept": "edst",
+            "max": 88.96
+        },
+        {
+            "courses_dept": "epse",
+            "max": 88.96
+        },
+        {
+            "courses_dept": "apsc",
+            "max": 88.95
+        },
+        {
+            "courses_dept": "civl",
+            "max": 88.95
+        },
+        {
+            "courses_dept": "edcp",
+            "max": 88.94
+        },
+        {
+            "courses_dept": "grsj",
+            "max": 88.94
+        },
+        {
+            "courses_dept": "musc",
+            "max": 88.94
+        },
+        {
+            "courses_dept": "phar",
+            "max": 88.94
+        },
+        {
+            "courses_dept": "sowk",
+            "max": 88.94
+        },
+        {
+            "courses_dept": "biol",
+            "max": 88.93
+        },
+        {
+            "courses_dept": "math",
+            "max": 88.93
+        },
+        {
+            "courses_dept": "bioc",
+            "max": 88.92
+        },
+        {
+            "courses_dept": "cell",
+            "max": 88.92
+        },
+        {
+            "courses_dept": "gpp",
+            "max": 88.92
+        },
+        {
+            "courses_dept": "plan",
+            "max": 88.92
+        },
+        {
+            "courses_dept": "adhe",
+            "max": 88.91
+        },
+        {
+            "courses_dept": "dhyg",
+            "max": 88.91
+        },
+        {
+            "courses_dept": "kin",
+            "max": 88.91
+        },
+        {
+            "courses_dept": "mine",
+            "max": 88.91
+        },
+        {
+            "courses_dept": "pcth",
+            "max": 88.91
+        },
+        {
+            "courses_dept": "psyc",
+            "max": 88.91
+        },
+        {
+            "courses_dept": "fnh",
+            "max": 88.9
+        },
+        {
+            "courses_dept": "spph",
+            "max": 88.9
+        },
+        {
+            "courses_dept": "fipr",
+            "max": 88.89
+        },
+        {
+            "courses_dept": "medg",
+            "max": 88.89
+        },
+        {
+            "courses_dept": "nrsc",
+            "max": 88.89
+        },
+        {
+            "courses_dept": "phys",
+            "max": 88.89
+        },
+        {
+            "courses_dept": "babs",
+            "max": 88.88
+        },
+        {
+            "courses_dept": "busi",
+            "max": 88.88
+        },
+        {
+            "courses_dept": "educ",
+            "max": 88.88
+        },
+        {
+            "courses_dept": "lled",
+            "max": 88.88
+        },
+        {
+            "courses_dept": "nurs",
+            "max": 88.88
+        },
+        {
+            "courses_dept": "path",
+            "max": 88.88
+        },
+        {
+            "courses_dept": "rhsc",
+            "max": 88.88
+        },
+        {
+            "courses_dept": "zool",
+            "max": 88.88
+        },
+        {
+            "courses_dept": "frst",
+            "max": 88.87
+        },
+        {
+            "courses_dept": "libr",
+            "max": 88.87
+        },
+        {
+            "courses_dept": "caps",
+            "max": 88.86
+        },
+        {
+            "courses_dept": "arst",
+            "max": 88.85
+        },
+        {
+            "courses_dept": "midw",
+            "max": 88.85
+        },
+        {
+            "courses_dept": "econ",
+            "max": 88.83
+        },
+        {
+            "courses_dept": "ling",
+            "max": 88.83
+        },
+        {
+            "courses_dept": "stat",
+            "max": 88.83
+        },
+        {
+            "courses_dept": "cpsc",
+            "max": 88.82
+        },
+        {
+            "courses_dept": "chem",
+            "max": 88.8
+        },
+        {
+            "courses_dept": "eece",
+            "max": 88.79
+        },
+        {
+            "courses_dept": "eosc",
+            "max": 88.79
+        },
+        {
+            "courses_dept": "gsat",
+            "max": 88.78
+        },
+        {
+            "courses_dept": "rsot",
+            "max": 88.78
+        },
+        {
+            "courses_dept": "mech",
+            "max": 88.77
+        },
+        {
+            "courses_dept": "phth",
+            "max": 88.76
+        },
+        {
+            "courses_dept": "ccst",
+            "max": 88.75
+        },
+        {
+            "courses_dept": "chbe",
+            "max": 88.75
+        },
+        {
+            "courses_dept": "dent",
+            "max": 88.75
+        },
+        {
+            "courses_dept": "envr",
+            "max": 88.75
+        },
+        {
+            "courses_dept": "lfs",
+            "max": 88.75
+        },
+        {
+            "courses_dept": "medi",
+            "max": 88.75
+        },
+        {
+            "courses_dept": "obst",
+            "max": 88.75
+        },
+        {
+            "courses_dept": "hunu",
+            "max": 88.71
+        },
+        {
+            "courses_dept": "soci",
+            "max": 88.71
+        },
+        {
+            "courses_dept": "cics",
+            "max": 88.68
+        },
+        {
+            "courses_dept": "anth",
+            "max": 88.67
+        },
+        {
+            "courses_dept": "rmes",
+            "max": 88.67
+        },
+        {
+            "courses_dept": "surg",
+            "max": 88.67
+        },
+        {
+            "courses_dept": "visa",
+            "max": 88.67
+        },
+        {
+            "courses_dept": "engl",
+            "max": 88.65
+        },
+        {
+            "courses_dept": "bafi",
+            "max": 88.64
+        },
+        {
+            "courses_dept": "arth",
+            "max": 88.63
+        },
+        {
+            "courses_dept": "comm",
+            "max": 88.6
+        },
+        {
+            "courses_dept": "hist",
+            "max": 88.6
+        },
+        {
+            "courses_dept": "bams",
+            "max": 88.58
+        },
+        {
+            "courses_dept": "thtr",
+            "max": 88.57
+        },
+        {
+            "courses_dept": "fopr",
+            "max": 88.56
+        },
+        {
+            "courses_dept": "libe",
+            "max": 88.52
+        },
+        {
+            "courses_dept": "apbi",
+            "max": 88.5
+        },
+        {
+            "courses_dept": "arch",
+            "max": 88.5
+        },
+        {
+            "courses_dept": "chil",
+            "max": 88.5
+        },
+        {
+            "courses_dept": "cons",
+            "max": 88.5
+        },
+        {
+            "courses_dept": "fish",
+            "max": 88.5
+        },
+        {
+            "courses_dept": "fren",
+            "max": 88.5
+        },
+        {
+            "courses_dept": "geog",
+            "max": 88.5
+        },
+        {
+            "courses_dept": "port",
+            "max": 88.5
+        },
+        {
+            "courses_dept": "russ",
+            "max": 88.5
+        },
+        {
+            "courses_dept": "ceen",
+            "max": 88.47
+        },
+        {
+            "courses_dept": "fre",
+            "max": 88.47
+        },
+        {
+            "courses_dept": "spha",
+            "max": 88.47
+        },
+        {
+            "courses_dept": "mtrl",
+            "max": 88.42
+        },
+        {
+            "courses_dept": "clst",
+            "max": 88.4
+        },
+        {
+            "courses_dept": "sts",
+            "max": 88.4
+        },
+        {
+            "courses_dept": "eced",
+            "max": 88.37
+        },
+        {
+            "courses_dept": "mrne",
+            "max": 88.33
+        },
+        {
+            "courses_dept": "biof",
+            "max": 88.31
+        },
+        {
+            "courses_dept": "pols",
+            "max": 88.3
+        },
+        {
+            "courses_dept": "food",
+            "max": 88.29
+        },
+        {
+            "courses_dept": "phil",
+            "max": 88.29
+        },
+        {
+            "courses_dept": "name",
+            "max": 88.27
+        },
+        {
+            "courses_dept": "pers",
+            "max": 88.25
+        },
+        {
+            "courses_dept": "germ",
+            "max": 88.24
+        },
+        {
+            "courses_dept": "astr",
+            "max": 88.22
+        },
+        {
+            "courses_dept": "cogs",
+            "max": 88.21
+        },
+        {
+            "courses_dept": "geob",
+            "max": 88.17
+        },
+        {
+            "courses_dept": "hgse",
+            "max": 88.14
+        },
+        {
+            "courses_dept": "bmeg",
+            "max": 88.04
+        }
+    ]
+}
