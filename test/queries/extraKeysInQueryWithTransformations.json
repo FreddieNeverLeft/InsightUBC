@@ -1,0 +1,23 @@
+{
+    "title": "extra keys in query with transformations",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 95
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["courses_dept"],
+            "APPLY": []
+        },
+
+        "OK":0
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

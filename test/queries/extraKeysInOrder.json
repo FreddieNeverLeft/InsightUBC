@@ -1,0 +1,22 @@
+{
+    "title": "Extra keys in order",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": ["courses_avg"],
+                "wow": "ok"
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

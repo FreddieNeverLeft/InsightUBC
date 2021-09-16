@@ -1,0 +1,31 @@
+{
+    "title": "group key not in cols",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 95
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "overallAvg",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "overallAvg": {
+                        "AVG": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

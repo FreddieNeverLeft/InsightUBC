@@ -1,0 +1,21 @@
+{
+    "title": "Group array type incorrect",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 95
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [{"hello":0}],
+            "APPLY": []
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

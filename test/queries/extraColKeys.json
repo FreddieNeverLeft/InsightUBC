@@ -1,0 +1,29 @@
+{
+    "title": "extra col keys not in apply or group",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 89
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_avg", "courses_title", "overallAvg"],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "courses_avg"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["courses_title"],
+            "APPLY": [{
+                "overallAvg": {
+                    "AVG": "courses_avg"
+                }
+            }]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

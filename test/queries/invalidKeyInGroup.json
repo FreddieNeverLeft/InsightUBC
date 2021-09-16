@@ -1,0 +1,21 @@
+{
+    "title": "Invalid key in group",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 95
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["wow"],
+            "APPLY": []
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

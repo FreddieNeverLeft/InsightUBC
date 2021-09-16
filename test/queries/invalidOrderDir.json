@@ -1,0 +1,23 @@
+{
+    "title": "Order key not in json",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ],
+            "ORDER": {
+                "dir": [],
+                "keys": [
+                    "courses_avg"
+                ]
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

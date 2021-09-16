@@ -1,0 +1,33 @@
+{
+    "title": "Invalid transformation operator",
+    "query":
+    { "WHERE": {
+        "GT": {
+            "courses_avg": 95
+        }
+    },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "test",
+                "courses_avg"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "APPLY": [
+                {
+                    "test": {
+                        "D":"courses_dept"
+                    }
+                }
+            ]
+        }
+
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
