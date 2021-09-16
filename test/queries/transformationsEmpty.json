@@ -1,0 +1,19 @@
+{
+    "title": "empty Transformations",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 95
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "overallAvg"
+            ]
+        },
+        "TRANSFORMATIONS": {}
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

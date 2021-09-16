@@ -1,0 +1,26 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "course_dept": "math"
+                    }
+                },
+                {
+                    "GT": {
+                        "course_avg": 99
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

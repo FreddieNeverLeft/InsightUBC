@@ -1,0 +1,233 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_uuid": "12*"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 90
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_uuid",
+                "courses_instructor",
+                "courses_title",
+                "courses_year"
+            ],
+            "ORDER": "courses_instructor"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "zool",
+            "courses_avg": 92.1,
+            "courses_uuid": "126",
+            "courses_instructor": "",
+            "courses_title": "comp animal phyl",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "phrm",
+            "courses_avg": 92.06,
+            "courses_uuid": "12034",
+            "courses_instructor": "",
+            "courses_title": "tech in hlthcare",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "phrm",
+            "courses_avg": 94.23,
+            "courses_uuid": "12032",
+            "courses_instructor": "",
+            "courses_title": "phrm in practc 1",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "path",
+            "courses_avg": 91.1,
+            "courses_uuid": "12681",
+            "courses_instructor": "",
+            "courses_title": "seminar",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "obst",
+            "courses_avg": 93,
+            "courses_uuid": "12707",
+            "courses_instructor": "",
+            "courses_title": "perinatal epidem",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "mine",
+            "courses_avg": 90.52,
+            "courses_uuid": "12610",
+            "courses_instructor": "",
+            "courses_title": "min eco fin",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "mine",
+            "courses_avg": 90.52,
+            "courses_uuid": "12609",
+            "courses_instructor": "",
+            "courses_title": "min eco fin",
+            "courses_year": 2014
+        },
+        {
+            "courses_dept": "mine",
+            "courses_avg": 91.6,
+            "courses_uuid": "12608",
+            "courses_instructor": "",
+            "courses_title": "mgmt sc meth",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "micb",
+            "courses_avg": 93.6,
+            "courses_uuid": "12424",
+            "courses_instructor": "",
+            "courses_title": "adv immunogeneti",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 90.5,
+            "courses_uuid": "12860",
+            "courses_instructor": "",
+            "courses_title": "adv eng acoustcs",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 92.59,
+            "courses_uuid": "12841",
+            "courses_instructor": "",
+            "courses_title": "modl dynam systm",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "lled",
+            "courses_avg": 90.3,
+            "courses_uuid": "12162",
+            "courses_instructor": "",
+            "courses_title": "thr lng&lit rsrc",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "dent",
+            "courses_avg": 92.4,
+            "courses_uuid": "12451",
+            "courses_instructor": "",
+            "courses_title": "rs mth&sem orbi",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "dent",
+            "courses_avg": 92.4,
+            "courses_uuid": "12450",
+            "courses_instructor": "",
+            "courses_title": "rs mth&sem orbi",
+            "courses_year": 2007
+        },
+        {
+            "courses_dept": "anat",
+            "courses_avg": 92,
+            "courses_uuid": "12693",
+            "courses_instructor": "",
+            "courses_title": "fnd bdy dsgn:bsc",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "lled",
+            "courses_avg": 90.3,
+            "courses_uuid": "12161",
+            "courses_instructor": "anderson, jim",
+            "courses_title": "thr lng&lit rsrc",
+            "courses_year": 2014
+        },
+        {
+            "courses_dept": "path",
+            "courses_avg": 91.78,
+            "courses_uuid": "12680",
+            "courses_instructor": "cote, helene",
+            "courses_title": "seminar",
+            "courses_year": 2011
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 92.59,
+            "courses_uuid": "12840",
+            "courses_instructor": "de silva, clarence wilfred",
+            "courses_title": "modl dynam systm",
+            "courses_year": 2012
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 90.5,
+            "courses_uuid": "12859",
+            "courses_instructor": "hodgson, murray",
+            "courses_title": "adv eng acoustcs",
+            "courses_year": 2012
+        },
+        {
+            "courses_dept": "obst",
+            "courses_avg": 93,
+            "courses_uuid": "12706",
+            "courses_instructor": "janssen, patricia",
+            "courses_title": "perinatal epidem",
+            "courses_year": 2013
+        },
+        {
+            "courses_dept": "anat",
+            "courses_avg": 92,
+            "courses_uuid": "12692",
+            "courses_instructor": "krebs, claudia",
+            "courses_title": "fnd bdy dsgn:bsc",
+            "courses_year": 2014
+        },
+        {
+            "courses_dept": "phrm",
+            "courses_avg": 94.23,
+            "courses_uuid": "12031",
+            "courses_instructor": "leung, larry",
+            "courses_title": "phrm in practc 1",
+            "courses_year": 2015
+        },
+        {
+            "courses_dept": "phrm",
+            "courses_avg": 92.06,
+            "courses_uuid": "12033",
+            "courses_instructor": "min, jason",
+            "courses_title": "tech in hlthcare",
+            "courses_year": 2015
+        },
+        {
+            "courses_dept": "micb",
+            "courses_avg": 93.6,
+            "courses_uuid": "12423",
+            "courses_instructor": "perona wright, georgia",
+            "courses_title": "adv immunogeneti",
+            "courses_year": 2013
+        },
+        {
+            "courses_dept": "zool",
+            "courses_avg": 92.1,
+            "courses_uuid": "125",
+            "courses_instructor": "savage, ken;shadwick, robert edward",
+            "courses_title": "comp animal phyl",
+            "courses_year": 2013
+        }
+    ]
+}

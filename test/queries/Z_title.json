@@ -1,0 +1,57 @@
+{
+    "title": "SELECT dept, avg WHERE avg > 97",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 0
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_title": "inst adul educ"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "adhe",
+            "courses_avg": 78.09
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_avg": 78.91
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_avg": 78.91
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_avg": 79.33
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_avg": 79.33
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_avg": 82.82
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_avg": 87.14
+        }
+    ]
+}

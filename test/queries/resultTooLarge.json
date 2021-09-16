@@ -1,0 +1,37 @@
+{
+    "title": "Too many results",
+    "query":   {
+        "WHERE": {
+
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_uuid", "overallAvg", "count", "passSum", "countFail"],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "overallAvg", "count", "passSum"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["courses_uuid"],
+            "APPLY": [{
+                "overallAvg": {
+                    "AVG": "courses_avg"
+                }},
+                { "count": {
+                    "COUNT": "courses_uuid"
+                }},
+                {"passSum": {
+                    "SUM": "courses_pass"
+                }},
+
+                {"countFail": {
+                    "COUNT": "courses_fail"
+                }}
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "ResultTooLargeError"
+}
